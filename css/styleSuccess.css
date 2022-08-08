@@ -1,0 +1,45 @@
+body {
+    background-color: #F9F5EB;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+h1,h2 {
+    color: #1C3879;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 100%;
+  }
+
+  .fa-check {
+    color: #50c878;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-linkedin {
+    color: #007bb5;
+  }
+
+  .fa-github {
+    color: black;
+  }
+
+  .fa-home {
+    color:#1C3879;
+}
+
+.container {
+    margin-top: 150px;
+  }
