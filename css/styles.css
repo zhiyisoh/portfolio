@@ -98,6 +98,12 @@ html, body {
     padding: 0 150px 10px;
 }
 
+.j-music, .exploring, .gaming {
+  display: inline-block;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
 .my-projects {
     background-color: white;
     
