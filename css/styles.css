@@ -22,6 +22,7 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    overflow: visible;
 }
 
 .main {
@@ -32,6 +33,8 @@ html, body {
 .main-screen{
     animation-duration: 2.5s;
     animation-name: fadeIn;
+    padding: 30px;
+    margin-bottom: 50px;
 }
 
 
@@ -66,7 +69,6 @@ html, body {
     display: inline-block;
     position: relative;
     bottom: 100px;
-    
 }
 
 .my-name {
@@ -81,32 +83,62 @@ html, body {
     color: #607EAA;
 }
 
-.division {
-    width: 50px;
-    border-style: none none dotted none;
-    border-width: 10px;
-    color: rgba(128, 128, 128, 0.575);
-}
-
-.about-me {
+.about-me, .my-projects{
     background-color: white;
-    
+    padding: 20px 0;
 }
+.my-contact, .my-skills  {
+  background-color:#F9F5EB;
+  padding: 20px 0;
 
+}
 
 .about-para {
-    padding: 0 150px 10px;
+    width: 50%;
+    margin: auto;
+    text-align: left;
 }
 
 .j-music, .exploring, .gaming {
-  display: inline-block;
-  padding: 50px;
-  margin-bottom: 20px;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 30px;
+  
+}
+
+.j-music-desc, .exploring-desc, .gaming-desc {
+  text-align: left;
+}
+
+.prog-skill, .web-dev {
+  width: 70%;
+  margin: 20px auto;
 }
 
 .my-projects {
     background-color: white;
     
+}
+
+.project-listings {
+  margin: auto;
+  width: 50%;
+}
+
+.portfolio-list {
+  text-align: left;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 
@@ -195,25 +227,24 @@ input[type=text], select, textarea {
 
 #java-icon, #html-icon, #c-icon, #js-icon{
     border-radius: 20%;
-    margin-top: 30px;
+    margin: 50px;
     height: 150px;
     width: 150px;
     display: inline-block;
-    padding: 50px;
 }
 
 #sql-icon, #css-icon {
     border-radius: 20%;
-    margin-top: 30px;
+    margin: 50px;
     height: 150px;
     width: 120px;
     display: inline-block;
-    padding: 50px;
 }
 
 #web-design-icon {
     height: 200px;
     width: 200px;
+
 }
 
 
