@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soh Zhi Yi</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +18,11 @@
 
 
 <body>
-
+    <script src="js/reveal.js"></script>
 
     <div>
-        
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"
+                aria-hidden="true"></i></button>
         <script src="js/scrollToTop.js"></script>
     </div>
 
@@ -37,127 +38,159 @@
             <img src="images/logo.png" alt="main logo image" class="main-logo">
             <div class="introduction">
                 <h1 class="my-name">Soh Zhi Yi</h1>
-                <h3 class="subtitle">A Computer Science undergraduate</h3>
+                <h3 class="subtitle">Aspiring Tech Professional</h3>
             </div>
         </div>
-
-        <br><br><br><br><br>
-        <hr class="division">
-        <br>
     </div>
 
-    
+
 
     <div class="content">
-        <section class="about-me reveal" id="about">
-            <br>
-            <h1>about me.</h1>
+        <section class="about-me" id="about">
+            <div class="reveal">
+                <h1 id="about-heading">about me.</h1>
 
-            <img src="images/profilepic.jfif" alt="" id="profilepic">
+                <img src="images/profilepic.jfif" alt="" id="profilepic">
 
-            <p class = "about-para">Hi, I am Zhi Yi (Elise) and I am currently a Year 2 undergraduate from SMU who is currently pursuing a
-                degree in computer science. I'm an inquisitive and extroverted individual who can adapt fast to a new
-                environment. I am also keen to learn and work with peers and future colleagues. I like to experiment
-                with new things and enjoy gaining new knowledge along the way. 
-                <br><br>
-                I aspire to learn more new skills and broaden my horizons through experiencing new opportunities that I
-                have.
-            </p>
+                <p class="about-para">Hi, I am Zhi Yi (Elise) and I am currently a Year 2 undergraduate from SMU who is
+                    currently pursuing a
+                    degree in computer science. I'm an <strong>inquisitive and extroverted</strong> individual who can
+                    <strong>
+                        adapt fast to a new environment</strong>. I am also keen to learn and work with peers and future
+                    colleagues. I like to experiment
+                    with new things and enjoy gaining new knowledge along the way.
+                    <br><br>
+                    I aspire to learn more new skills and broaden my horizons through experiencing new opportunities
+                    that I
+                    have. <strong>Some of my hobbies include:</strong>
+                </p>
 
-            <br>
-            <h3>my hobbies.</h3>
+                <div class="j-music">
+                    <img src="images/music-icon-download-10.jpg" alt="music" id="music-icon">
+                    <h3>Japanese Pop Culture</h3>
+                    <div class="j-music-desc">
 
-            <div class="j-music">
-                <img src="images/music-icon-download-10.jpg" alt="music" id ="music-icon">
-                <h4>Japanese Pop Culture</h4>
-            </div>
-
-            <div class = "gaming">
-                <img src="images/gaming-icon-2.jpg" alt="gaming" id = "gaming-icon">
-                <h4>Gaming</h4>
-            </div>
-
-            <div class = "exploring">
-                <img src="images/set-travel-icon-doodle-style_6997-858.jpg" alt="exploring" id="exploring-icon">
-                <h4>Exploring</h4>
-            </div>
-
-            <hr class="division">
-            <br>
-        </section>
-
-
-        <section class="my-skills reveal" id="skills">
-            <br>
-            <h1>skills.</h1>
-
-                <img src="images/c-programming-icon-9.jpg" alt="c" id="c-icon">
-                <img src="images/css-icon-png-0.jpg" alt="css" id="css-icon">
-                <img src="images/java-icon-images-0.jpg" alt="java" id="java-icon">
-                <img src="images/javascript-icon-png-23.jpg" alt="js" id ="js-icon">
-                <br>
-                <img src="images/sql-icon-8.jpg" alt="sql" id="sql-icon">
-                <img src="images/icon-html-8.jpg" alt="html" id="html-icon">
-
-                <hr class="division">
-                <br>
-        </section>
-
-
-        <section class="my-projects reveal" id="projects">
-            <br>
-            <h1>projects.</h1>
-                <br>
-                <div class = "portfolio-project">
-                    <img src="images/NicePng_web-designing-images-png_8707419.png" alt="web-design" id="web-design-icon">
-                    <div class="portfolio-desc">
-                        <h3>Portfolio Website</h3>
-                        <p>Developed my portfolio website using HTML, CSS and Javascript.</p>
-                        <p>Source Code available on GitHub.</p>
-                        <br>
+                        <p>During my spare time, I often immerse myself in Japanese pop music as well as Japanese media
+                            such
+                            as
+                            anime and manga.</p>
                     </div>
-                    
                 </div>
-                
-                <hr class="division">
-                <br>
-        </section>
 
-        <section class="my-contact reveal" id="contact">
-            <br>
-            <h1>contact me.</h1>
-            <br>
+                <div class="gaming">
+                    <img src="images/gaming-icon-2.jpg" alt="gaming" id="gaming-icon">
+                    <h3>Gaming</h3>
+                    <div class="gaming-desc">
 
-            <div class ="contact-form-input">
-                <form method="POST" action="https://api.sheetmonkey.io/form/nyrap6X9YQuN7wgkR3Bk13">
-                    <div>
-                        <label for="name">Name</label><br>
-                        <input type="text" id="name" name="name" placeholder="Your name.." required>
+                        <p>I enjoy gaming during my spare time with my friends. Some games include Final Fantasy XIV and
+                            Valorant.</p>
                     </div>
-                    
-                    <div>
-                        <label for="email">Email </label><br>
-                        <input type="text" id="email" name="email" placeholder="Your email.." required>
+                </div>
+
+                <div class="exploring">
+                    <img src="images/set-travel-icon-doodle-style_6997-858.jpg" alt="exploring" id="exploring-icon">
+                    <h3>Exploring</h3>
+                    <div class="exploring-desc">
+
+                        <p>I enjoy exploring new places and eateries around Singapore, and spending time with loved ones
+                            and
+                            friends.
+                            I also love to travel around the world and immerse myself in different cultures, as well as
+                            appreciating different architectures across the globe.</p>
                     </div>
-
-                    <div>
-                        <label for="your-message">Your Message </label><br>
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Your message.." required></textarea>
-                    </div>
-
-                    <input type="submit" value="Submit">
-
-                </form>
+                </div>
             </div>
-                
         </section>
 
-        <br><br>
+
+        <section class="my-skills" id="skills">
+            <div class="reveal">
+                <h1 id="skills-heading">skills.</h1>
+                <div class="skill-icons">
+                    <div class="prog-skill">
+                        <h3>Programming Languages</h3>
+                        <img src="images/c-programming-icon-9.jpg" alt="c" id="c-icon">
+                        <img src="images/sql-icon-8.jpg" alt="sql" id="sql-icon">
+                        <img src="images/java-icon-images-0.jpg" alt="java" id="java-icon">
+                    </div>
+
+                    <div class="web-dev">
+                        <h3>Web Development</h3>
+                        <img src="images/javascript-icon-png-23.jpg" alt="js" id="js-icon">
+                        <img src="images/css-icon-png-0.jpg" alt="css" id="css-icon">
+                        <img src="images/icon-html-8.jpg" alt="html" id="html-icon">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="my-projects" id="projects">
+            <div class="reveal">
+                <h1 id="projects-heading">projects.</h1>
+                <div class="project-listings">
+                    <div class="portfolio-project">
+                        <img src="images/NicePng_web-designing-images-png_8707419.png" alt="web-design"
+                            id="web-design-icon">
+                        <div class="portfolio-desc">
+
+                            <div class="portfolio">
+                                <h3>Portfolio Website</h3>
+                                <div class="portfolio-list">
+                                    <p>Developed my portfolio website (www.sohzhiyi.com) using HTML, CSS and Javascript.
+                                    </p>
+
+                                    <p><a href="https://github.com/sohzhiyi/portfolio">View source code on GitHub ></a>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="my-contact" id="contact">
+            <div class="reveal">
+                <h1>contact me.</h1>
+                <div class="contact-form-input">
+                    <form method="POST" action="https://api.sheetmonkey.io/form/nyrap6X9YQuN7wgkR3Bk13">
+                        <div>
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" placeholder="Your name.." required>
+                        </div>
+
+                        <div>
+                            <label for="email">Email </label><br>
+                            <input type="text" id="email" name="email" placeholder="Your email.." required>
+                        </div>
+
+                        <div>
+                            <label for="your-message">Your Message </label><br>
+                            <textarea name="message" id="" cols="30" rows="10" placeholder="Your message.."
+                                required></textarea>
+                        </div>
+
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+            </div>
+
+
+
+        </section>
+
     </div>
 
 </body>
 
-<div class = "socials">
+<div class="socials">
     <a href="https://www.linkedin.com/in/soh-zhi-yi/" class="fa fa-linkedin fa-2x"></a>
     <a href="https://github.com/sohzhiyi" class="fa fa-github fa-2x"></a>
 </div>
