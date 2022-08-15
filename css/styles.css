@@ -1,102 +1,96 @@
 body {
-    background-color: #F9F5EB;
-    text-align: center;
-    position: relative;
-    margin: 0;
-    font-family: 'Comfortaa', cursive;
+  background-color: #F9F5EB;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
 }
 
 h1,h2 {
-    color: #1C3879;
+  color: #1C3879;
 }
 
 h3 {
-    color: #607EAA;
+  color: #607EAA;
 }
 
 h4 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    overflow: visible;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow: visible;
 }
 
-.main {
-    position: relative;
-    
+/* BACKGROUND */
+
+.about-me, .my-projects{
+  background-color: white;
+  padding: 20px 0;
 }
+
+.my-contact, .my-skills  {
+background-color:#F9F5EB;
+padding: 20px 0;
+}
+
+/* -------------MAIN SCREEN-------------- */
+
 
 .main-screen{
-    animation-duration: 2.5s;
-    animation-name: fadeIn;
-    padding: 30px;
-    margin-bottom: 50px;
+  animation-duration: 2.5s;
+  animation-name: fadeIn;
+  padding: 30px;
+  margin-bottom: 50px;
 }
 
 
 .top-nav {
-    margin: 50px auto 50px auto;
+  margin: 50px auto 50px auto;
 
 }
 
 .top-nav a {
-    padding: 10px;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    color: #1C3879;
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #1C3879;
 }
 
 .top-nav a:hover {
-    color: #607EAA;
-  }
-
-
-.main-logo {
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    position: relative;
-    right: 50px;
+  color: #607EAA;
 }
 
+.main-logo {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  position: relative;
+  right: 50px;
+}
 
 .introduction {
-    display: inline-block;
-    position: relative;
-    bottom: 100px;
+  display: inline-block;
+  position: relative;
+  bottom: 100px;
 }
 
 .my-name {
-    font-family: 'Comfortaa', cursive;
-    font-weight: bold;
-    font-size: 3rem;
-    color: #1C3879;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
-.subtitle {
-    font-family: 'Comfortaa', cursive;
-    color: #607EAA;
-}
+/* ----------------ABOUT ME------------------- */
 
-.about-me, .my-projects{
-    background-color: white;
-    padding: 20px 0;
-}
-.my-contact, .my-skills  {
-  background-color:#F9F5EB;
-  padding: 20px 0;
-
-}
 
 .about-para {
-    width: 50%;
-    margin: auto;
-    text-align: left;
+  width: 50%;
+  margin: auto;
+  text-align: left;
 }
 
 .j-music, .exploring, .gaming {
@@ -104,30 +98,181 @@ html, body {
   margin: auto;
   padding: 20px;
   margin-bottom: 30px;
-  
 }
 
 .j-music-desc, .exploring-desc, .gaming-desc {
-  text-align: left;
+  text-align: left; 
 }
+
+
+/* -----------------SKILLS----------------- */
 
 .prog-skill, .web-dev {
-  width: 70%;
-  margin: 20px auto;
+width: 70%;
+margin: 20px auto;
 }
 
-.my-projects {
-    background-color: white;
-    
-}
+/* -----------PROJECTS---------------- */
+
 
 .project-listings {
-  margin: auto;
-  width: 50%;
+margin: auto;
+width: 50%;
 }
 
 .portfolio-list {
-  text-align: left;
+text-align: left;
+}
+
+/* ---------------CONTACT FORM--------------------- */
+
+input[type=text], select, textarea {
+  width: 50%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:#1C3879;
+  color: white;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Comfortaa', cursive;
+}
+
+input[type=submit]:hover {
+  background-color:#607EAA;
+}
+
+.contact-form-input {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* ---------------- SOCIAL ICONS ------------------- */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 100%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  color: #007bb5;
+}
+
+.fa-github {
+  color: black;
+}
+
+.socials {
+    background-color: white;
+    padding: 20px;
+}
+
+
+/* ------------------- IMAGES --------------------- */
+
+#profilepic{
+  border-radius: 100%;
+  margin: 30px 0;
+  height: 200px;
+  width: 200px;
+  animation: fadeIn 2.5s;
+}
+
+#gaming-icon, #music-icon, #exploring-icon{
+  border-radius: 100%;
+  margin-top: 30px;
+  height: 200px;
+  width: 200px;
+}
+
+#java-icon, #html-icon, #c-icon, #js-icon{
+  border-radius: 20%;
+  margin: 50px;
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+}
+
+#sql-icon, #css-icon {
+  border-radius: 20%;
+  margin: 50px;
+  height: 150px;
+  width: 120px;
+  display: inline-block;
+}
+
+#web-design-icon {
+  height: 200px;
+  width: 200px;
+
+}
+
+
+/* SCROLL TO TOP BUTTON */
+
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99;
+  border: none; 
+  outline: none; 
+  background-color:#1C3879;
+  color: white; 
+  cursor: pointer; 
+  padding: 5px; 
+  border-radius: 100%;
+  font-size: 18px; 
+}
+
+
+/* ------------KEYFRAMES-------------- */
+
+
+@keyframes slideup {
+  from {
+    margin-top: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .reveal{
@@ -135,170 +280,10 @@ html, body {
   transform: translateY(150px);
   opacity: 0;
   transition: 2s all ease;
-}
-.reveal.active{
+  }
+  
+  .reveal.active{
   transform: translateY(0);
   opacity: 1;
-}
-
-
-
-/* ---------------CONTACT FORM--------------------- */
-input[type=text], select, textarea {
-    width: 50%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical;
   }
   
-  input[type=submit] {
-    background-color:#1C3879;
-    color: white;
-    padding: 12px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Comfortaa', cursive;
-  }
-  
-  input[type=submit]:hover {
-    background-color:#607EAA;
-  }
-  
-
-  .contact-form-input {
-    border-radius: 5px;
-    padding: 20px;
-  }
-
-  #success-form-sent{
-      color: darkred;
-      display: none;
-  }
-  /* ---------------- BOTTOM ICONS ------------------- */
-  .fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 100%;
-  }
-
-  .fa:hover {
-    opacity: 0.7;
-  }
-
-  .fa-linkedin {
-    color: #007bb5;
-  }
-
-  .fa-github {
-    color: black;
-  }
-
-  .socials {
-      background-color: white;
-      padding: 20px;
-  }
-
-
-/* ------------------- IMAGES --------------------- */
-
-  #profilepic{
-    border-radius: 100%;
-    margin: 30px 0;
-    height: 200px;
-    width: 200px;
-    animation: fadeIn 2.5s;
-}
-
-#gaming-icon, #music-icon, #exploring-icon{
-    border-radius: 100%;
-    margin-top: 30px;
-    height: 200px;
-    width: 200px;
-}
-
-#java-icon, #html-icon, #c-icon, #js-icon{
-    border-radius: 20%;
-    margin: 50px;
-    height: 150px;
-    width: 150px;
-    display: inline-block;
-}
-
-#sql-icon, #css-icon {
-    border-radius: 20%;
-    margin: 50px;
-    height: 150px;
-    width: 120px;
-    display: inline-block;
-}
-
-#web-design-icon {
-    height: 200px;
-    width: 200px;
-
-}
-
-
-/* SCROLL TO TOP */
-
-#myBtn {
-    display: none; 
-    position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
-    z-index: 99;
-    border: none; 
-    outline: none; 
-    background-color:#1C3879;
-    color: white; 
-    cursor: pointer; 
-    padding: 5px; 
-    border-radius: 100%;
-    font-size: 18px; 
-  }
-  
-
-  /* ANIMATION */
-
-  
-  @keyframes slideup {
-    from {
-      margin-top: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-top: 0%;
-      width: 100%;
-    }
-  }
-
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
-#footer {
-    background-color: white;
-}
