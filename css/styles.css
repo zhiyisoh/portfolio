@@ -84,6 +84,15 @@ padding: 20px 0;
   font-size: 3rem;
 }
 
+  @media (max-width: 1028px) {
+    .introduction {
+      position: static;
+      margin-top: 0;
+    }
+    .main-logo {
+      position: static;
+    }
+
 /* ----------------ABOUT ME------------------- */
 
 
