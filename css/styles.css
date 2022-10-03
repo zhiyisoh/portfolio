@@ -201,7 +201,7 @@ input[type=submit]:hover {
   width: 200px;
 }
 
-#java-icon, #html-icon, #c-icon, #js-icon, #spring-icon, #bootstrap-icon, #react-icon{
+#java-icon, #html-icon, #c-icon, #js-icon, #spring-icon, #bootstrap-icon, #react-icon, #vue-icon{
   border-radius: 20%;
   margin: 50px;
   height: 150px;
